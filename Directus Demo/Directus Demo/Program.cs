@@ -17,7 +17,7 @@ namespace Directus_Demo
             var client = new RestClient("http://localhost/Directus/api/1.1/tables/first_table/rows");
             var request = new RestRequest(Method.GET);
             request.AddHeader("cache-control", "no-cache");
-            request.AddHeader("authorization", "Bearer 1Po1FSAKtbIpnWZgqPQ9i7BxGtLbvCln");
+            request.AddHeader("authorization", "Bearer **API KEY GOES HERE**");
             IRestResponse response = client.Execute(request);
 
             JToken parsedJson = JToken.Parse(response.Content.ToString());
